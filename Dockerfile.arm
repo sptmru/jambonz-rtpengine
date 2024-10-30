@@ -1,0 +1,6 @@
+FROM sptmru/rtpengine-arm:1.0 
+
+COPY ./entrypoint.sh /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["rtpengine"]
